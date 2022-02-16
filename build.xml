@@ -21,7 +21,7 @@
 
   <!-- Define Sonar Properties -->
   <property name="sonar.projectKey" value="org.sonar.ant.tests:java-version" />
-  <property name="sonar.projectName" value="rps-ant" />
+  <property name="sonar.projectName" value="roshambo" />
   <property name="sonar.projectVersion" value="0.1-SNAPSHOT" />
   <property name="sonar.sources" value="${src.dir}" />
   <property name="sonar.binaries" value="${classes.dir}" />
