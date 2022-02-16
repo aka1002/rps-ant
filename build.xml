@@ -32,7 +32,7 @@
 <target name="sonar" >
 	
 	<!-- Add the Sonar task -->
-    <taskdef uri="antlib:org.sonarsource.scanner.ant.SonarQubeTask">
+    <taskdef uri="antlib">
        <classpath path="sonarqube-ant-task-2.7.1.1951.jar" /> 
    
 </taskdef>
