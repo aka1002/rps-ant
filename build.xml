@@ -29,7 +29,7 @@
   <property name="sonar.java.source" value="1.6" />
   <property name="sonar.java.target" value="1.6" />
 	
-<target name="sonar" depends="cleanclasses">
+<target name="sonar" depends="classes">
       <!-- Add the Sonar task -->
     <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
         <classpath path="var/lib/jenkins/workspace/ant-ak/sonar-ant-task-*.jar" />
@@ -41,9 +41,8 @@
     <!-- Execute Sonar -->
     <sonar:sonar />
   </target>
-  <target name="all"
-          depends="clean,compile,sonar" />
- <!-- </target> -->
+  <target name="all" depends="clean,compile,sonar" />
+  </target> 
 
 
  <import file="maven-build.xml"/>
