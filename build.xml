@@ -35,7 +35,7 @@
     <taskdef uri="antlib:org.sonarsource.scanner.ant.SonarQubeTask">
        <classpath path="sonarqube-ant-task-2.7.1.1951.jar" /> 
    
- </typedef>
+</taskdef>
     
 
     <!-- Execute Sonar -->
