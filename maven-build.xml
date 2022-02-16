@@ -15,7 +15,7 @@
 <!--                                                                        -->
 <!-- ====================================================================== -->
 
-<project name="roshambo-from-maven" default="package" basedir="." xmlns:sonar="antlib:org.sonar.ant">
+<project name="roshambo-from-maven" default="package" basedir=".">
 
   <!-- ====================================================================== -->
   <!-- Build environment properties                                           -->
@@ -39,14 +39,6 @@
   <property name="maven.settings.offline" value="false"/>
   <property name="maven.settings.interactiveMode" value="true"/>
   
-   <property name="sonar.projectKey" value="org.sonar.ant.tests:java-version" />
-  <property name="sonar.projectName" value="rps-ant" />
-  <property name="sonar.projectVersion" value="0.1-SNAPSHOT" />
-  <property name="sonar.sources" value="${src.dir}" />
-  <property name="sonar.binaries" value="${classes.dir}" />
-  <property name="sonar.profile" value="java-version" />
-  <property name="sonar.java.source" value="1.6" />
-  <property name="sonar.java.target" value="1.6" />
   
 
   <!-- ====================================================================== -->
@@ -256,20 +248,5 @@
          ignoreerrors="true"/>
     </target>
     
- <target name="sonar" depends="cleanclasses">
-      <!-- Add the Sonar task -->
-    <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
-        <classpath path="var/lib/jenkins/workspace/ant-ak/sonar-ant-task-*.jar" />
-    </taskdef>
-    
-    <sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
-    
-   
-   <sonar:sonar />
-</target>
-
-        
-<target name="rebuild" depends="clean,compile,test" />
-    </target>
-
+ 
 </project>
