@@ -32,7 +32,7 @@
 <target name="sonar" >
       <!-- Add the Sonar task -->
     <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
-        <classpath path="sonar-ant-task-*.jar" />
+        <classpath path="sonarqube-ant-task-2.7.1.1951.jar" />
     </taskdef>
     <property name="sonar.sources" value="src" />
     <property name="sonar.projectKey" value="Sample" />
