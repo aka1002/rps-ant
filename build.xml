@@ -41,8 +41,7 @@
     <!-- Execute Sonar -->
     <sonar:sonar />
   </target>
-  <target name="all" depends="clean,compile,sonar" />
-  </target> 
+  
 
 
  <import file="maven-build.xml"/>
@@ -53,5 +52,7 @@
  <target name="help">
     <echo message="Please run: $ant -projecthelp"/>
   </target>
-  
+
+  <target name="all" depends="clean,compile,sonar" />
+  </target> 
 </project>
