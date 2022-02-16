@@ -254,8 +254,8 @@
          ignoreerrors="true"/>
   </target>
       <target name="sonar" description="--> run SONAR analysis">
-          <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
-   <classpath path="../../target/sonar-ant-task.jar" />
+          <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
+   <classpath path="../../target/sonar-ant-task-*.jar" />
     
  
     </taskdef>
