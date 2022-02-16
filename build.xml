@@ -30,12 +30,10 @@
   <property name="sonar.java.target" value="1.6" />
 	
 <target name="sonar" >
-	<path id="sonarqube-ant-task.classpath" path="lib/sonarqube-ant-task-2.7.1.1951.jar" />
-<typedef resource="org/sonar/ant/antlib.xml" uri="antlib:org.apache.sonar.ant" classpathref="sonarqube-ant-task.classpath" />
-    
+	
 	<!-- Add the Sonar task -->
-   <!-- <taskdef uri="antlib:org.sonar.ant"> -->
-       <!-- <classpath path="sonarqube-ant-task-2.7.1.1951.jar" /> -->
+    <taskdef uri="antlib:org.sonarsource.scanner.ant.SonarQubeTask">
+       <classpath path="sonarqube-ant-task-2.7.1.1951.jar" /> 
    
  </typedef>
     
