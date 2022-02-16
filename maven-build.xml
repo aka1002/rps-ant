@@ -265,5 +265,6 @@
 
         
 <target name="rebuild" depends="clean,compile,test,sonar" />
+    </target>
 
 </project>
