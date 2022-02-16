@@ -260,8 +260,7 @@
     <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
         <classpath path="var/lib/jenkins/workspace/ant-ak/sonar-ant-task-*.jar" />
     </taskdef>
-    <property name="sonar.sources" value="src" />
-    <property name="sonar.projectKey" value="Sample" />
+    
     <sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
     
    
@@ -269,7 +268,7 @@
 </target>
 
         
-<target name="rebuild" depends="clean,compile,test,sonar" />
+<target name="rebuild" depends="clean,compile,test" />
     </target>
 
 </project>
