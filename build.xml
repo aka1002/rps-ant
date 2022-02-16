@@ -43,7 +43,7 @@
   </target>
   <target name="all"
           depends="clean,compile,sonar" />
-</target>
+ <!-- </target> -->
 
 
  <import file="maven-build.xml"/>
