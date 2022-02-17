@@ -34,6 +34,7 @@
 	<!-- Add the Sonar task -->
     <taskdef uri="antlib:org.sonar.ant" resource="antlib.xml">
        <classpath path="sonarqube-ant-task-2.7.1.1951.jar" /> 
+	    <classpath path="${ant.library.dir}"/>
    
 </taskdef>
     
