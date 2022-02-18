@@ -28,7 +28,7 @@
   <property name="sonar.profile" value="java-version" />
   <property name="sonar.java.source" value="1.6" />
   <property name="sonar.java.target" value="1.6" />
-<sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />	
+
 	
 	
 
@@ -40,7 +40,7 @@
 			<classpath path="sonarqube-ant-task-2.7.1.1951.jar" />
 			<sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
 		</taskdef>
-	  
+	  <sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
 		
 		<!-- Execute SonarQube Scanner for Ant Analysis -->
 		<sonar:sonar />
