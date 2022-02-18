@@ -40,7 +40,7 @@
 			<classpath path="sonarqube-ant-task-2.7.1.1951.jar" />
 			<sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
 		</taskdef>
-	  <sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />
+	  
 		
 		<!-- Execute SonarQube Scanner for Ant Analysis -->
 		<sonar:sonar />
