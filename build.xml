@@ -28,6 +28,8 @@
   <property name="sonar.profile" value="java-version" />
   <property name="sonar.java.source" value="1.6" />
   <property name="sonar.java.target" value="1.6" />
+<sonarns:sonar xmlns:sonarns="antlib:org.sonar.ant" />	
+	
 	
 
 	
