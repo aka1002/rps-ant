@@ -1,5 +1,5 @@
 package com.mcnz.rps;
-package org.sonarsource.scanner.ant
+
 
 import static org.junit.Assert.fail;
 import org.junit.Assert;
